@@ -8,35 +8,134 @@
     <title>Capitulo 19 </title>
 </head>
 <!--Meu nome e ninguem-->
+<style>
+
+</style>
 
 <body>
     <header>
-        <h1>Capitulo 19</h1>
+        <h1 class="pri">Modolo 3</h1>
     </header>
     <main>
+        <h2 class="titulo">Variavel root </h2>
+        <p>Voce pode usar a variavel <b>:root</b>
+        <p>e usando <b>--Nome</b> para adicionar funçoes</p><br></p>
+        <h2 class="titulo">Flexibilidade no iframe 4</h2><br>
+        <li>Primeira mente vc deve colocar o IFRAME dentro de uma DIV. FICARA ASSIM:<br>
+            &lt;;div class ="video"&gt;<br>
+            &lt;#Aqui vai o iframe &gt;<br>
+            &lt;/div&gt;
+        </li>
+        <li>Depois vamos fazer essa configuação no css:</li>
+        <div class="lkk">
+            <pre class="codigo">div.video{
+                position:relative;
+                height:1px;
+                margin-left:-1 px;
+                margin-right:-1 px;
+                margin-bottom: -1 px;
+                pading-bottom: 1 px;
+            }
+            </pre>
+        </div>
+        <div class="lkkk">
+            <pre class="codigo">div.video > iframe
+                position:absolute;
+                top:5%;
+                left:5%;
+                width:90%;
+                height:90%
 
-
-
-
-
-
-
-
-
-
-
+            }
+            </pre>
+        </div><br>
+        <h3>Acompanhe o resultado:</h3><br>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/BwmzXTjDt7A?controls=0" title="YouTube video player"
+                allowfullscreen></iframe>
+        </div>
+        <br>
+        <h1 class="pri" id="l">background</h1>
 
 
 
 
 
     </main>
+
     <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            margin: auto;
+        }
+
+        body,
+        main {
+            height: 100%;
+        }
+
+        p,
+        li {
+            line-height: 4vh;
+        }
+
+        main {
+            position: relative;
+            background-color: #DEEFE7;
+            width: 1100px;
+            height: 100%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 6px 6px 6px #a3a2a2;
+
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        div {
+            width: 33vh;
+            display: inline-block;
+        }
+
+        .codigo {
+            display: inline-table;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid black;
+            padding: 15px 1px 1px;
+            margin-right: 127vh;
+        }
+
+        div.video {
+            text-align: center;
+            position: relative;
+            height: 58vh;
+            width: 110vh;
+
+            margin-left: 1px;
+            margin-right: 1px;
+            margin-bottom: 1px;
+            padding-bottom: 1px;
+        }
+
+        div.video>iframe {
+            border: 1px solid black;
+            text-align: center;
+            position: absolute;
+            top: -4%;
+            left: 19%;
+            width: 111%;
+            height: 111%;
+        }
+
         body {
             background: linear-gradient(90deg, rgba(182, 199, 13, 1) 49%, rgba(16, 122, 30, 1) 83%);
         }
 
-        header>h1 {
+        .pri {
+            text-align: center;
             background-color: blueviolet;
             color: aliceblue;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -48,6 +147,11 @@
             margin-left: 318px;
             margin-top: 0%;
             margin-bottom: 0%;
+        }
+
+        h1#l {
+            margin: 36px 224px 1px;
+
         }
     </style>
 </body>
