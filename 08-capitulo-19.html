@@ -55,8 +55,50 @@
                 allowfullscreen></iframe>
         </div>
         <br>
-        <h1 class="pri" id="l">background</h1>
+        <h1 class="pri" id="l">Background</h1>
+        <center><br>
+            <h2>Shorthand:</h2>
+            <p>color > image > position > repet > size > attachment</p>
+            <h3>Use attachemnt para fazer um paralax </h3><br>
+        </center>
+        <h1 class="pri" id="l">Tabela. Herarquia</h1>
+        <ol id="listas">
+            <li>
+                <p>tabelas : <b>tables</b> </p>
+            </li>
+            <li>
+                <p>Linha tabela : <b>tr</b> </p>
+            </li>
+            <li>
+                <p>cabeçario : <b>th</b></p>
+            </li>
+            <li>
+                <p>Dado tabela : <b>td</b></p>
+            </li>
+        </ol>
 
+
+        <ol>
+            <h3>Tabelas Grandes : </h3>
+            <p>Thead > Tbody > Tfoot</p>
+        </ol>
+
+        <h1 class="pri" id="l"> Iframe </h1>
+        <p>Os tamanho padão de um iframe e de 300x150, </p>
+        <p>vc pode usar<b> &lt;scolling=""&gt;</b> Para configurar o rolamento.</p><br><br>
+        <p>Para carregar um Menu local no iframe, Basta colocar um nome no iframe e colocar (Target:"nome") no link >
+            &lt;a&gt; </p>
+        <p>Exemplo:</p>
+        <div class="lkkk">
+            <pre class="codigo">
+                &lt;a target="ex" href="#"&gt;<br>
+                &lt;iframe name="ex"&gt; &lt;/iframe&gt;
+
+                
+                </pre>
+        </div><br>
+        <h3>Segurança iframe:</h3>
+        <p>Use o parametro: ( Sandbox="" ) para configurar a segurança</p>
 
 
 
@@ -64,6 +106,12 @@
     </main>
 
     <style>
+        li {
+            position: relative;
+            left: 22%;
+            text-align: justify;
+        }
+
         * {
             padding: 0%;
             margin: 0%;
